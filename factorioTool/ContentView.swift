@@ -8,19 +8,38 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var modelData: ModelData
+    
+    var games = Game.allCases
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationSplitView {
+            sidebarView
+        } content: {
+            ProductListView()
+        } detail: {
+            ResultView()
         }
-        .padding()
     }
+    
+    var sidebarView: some View {
+        List(games, selection: $modelData.selectedGame) { game in
+            NavigationLink(value: game) {
+                Image("factorio-logo")
+                    .resizable(resizingMode: .stretch)
+                    .aspectRatio(contentMode: .fit)
+                    .padding()
+            }
+        }
+        .navigationTitle("游戏")
+    }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(ModelData())
+            .preferredColorScheme(.dark)
     }
 }

@@ -7,19 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B09BA0129D0319900DA9E71 /* JsonCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B09BA0029D0319900DA9E71 /* JsonCore.swift */; };
+		6B09BA0429D03E8700DA9E71 /* ItemsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B09BA0329D03E8700DA9E71 /* ItemsTableView.swift */; };
+		6B09BA0829D07A0900DA9E71 /* NotificationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B09BA0729D07A0900DA9E71 /* NotificationData.swift */; };
+		6B09BA0A29D07D3300DA9E71 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B09BA0929D07D3300DA9E71 /* NotificationView.swift */; };
+		6B09BA0E29D0841E00DA9E71 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = 6B09BA0D29D0841E00DA9E71 /* AlertToast */; };
+		6B55D1E329D142C6006069A9 /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B55D1E229D142C6006069A9 /* ProductListView.swift */; };
+		6B55D1E529D14318006069A9 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B55D1E429D14318006069A9 /* ResultView.swift */; };
+		6B802BC329CF1C03000AED01 /* swipeLeftActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B802BC229CF1C03000AED01 /* swipeLeftActionView.swift */; };
+		6B802BC629CF2044000AED01 /* selectProductPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B802BC529CF2044000AED01 /* selectProductPopoverView.swift */; };
+		6B802BCA29CF2274000AED01 /* materialsAndRecipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B802BC929CF2274000AED01 /* materialsAndRecipes.json */; };
 		6BC35A5A29659C600031F27C /* factorioToolApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC35A5929659C600031F27C /* factorioToolApp.swift */; };
 		6BC35A5C29659C600031F27C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC35A5B29659C600031F27C /* ContentView.swift */; };
 		6BC35A5E29659C610031F27C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BC35A5D29659C610031F27C /* Assets.xcassets */; };
 		6BC35A6229659C610031F27C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BC35A6129659C610031F27C /* Preview Assets.xcassets */; };
+		6BC35A6929659CCA0031F27C /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC35A6829659CCA0031F27C /* Product.swift */; };
+		6BC35A6B2965A7A70031F27C /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC35A6A2965A7A70031F27C /* ModelData.swift */; };
+		6BC35A6D2965B9FA0031F27C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC35A6C2965B9FA0031F27C /* Extensions.swift */; };
+		6BC35A6F2965BAE00031F27C /* ListSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC35A6E2965BAE00031F27C /* ListSectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B09BA0029D0319900DA9E71 /* JsonCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonCore.swift; sourceTree = "<group>"; };
+		6B09BA0329D03E8700DA9E71 /* ItemsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableView.swift; sourceTree = "<group>"; };
+		6B09BA0629D0797500DA9E71 /* AlertToast-master */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "AlertToast-master"; path = "../Packages/AlertToast-master"; sourceTree = "<group>"; };
+		6B09BA0729D07A0900DA9E71 /* NotificationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationData.swift; sourceTree = "<group>"; };
+		6B09BA0929D07D3300DA9E71 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		6B55D1E229D142C6006069A9 /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
+		6B55D1E429D14318006069A9 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		6B802BC229CF1C03000AED01 /* swipeLeftActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swipeLeftActionView.swift; sourceTree = "<group>"; };
+		6B802BC529CF2044000AED01 /* selectProductPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectProductPopoverView.swift; sourceTree = "<group>"; };
+		6B802BC929CF2274000AED01 /* materialsAndRecipes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = materialsAndRecipes.json; sourceTree = "<group>"; };
 		6BC35A5629659C600031F27C /* factorioTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = factorioTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BC35A5929659C600031F27C /* factorioToolApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = factorioToolApp.swift; sourceTree = "<group>"; };
 		6BC35A5B29659C600031F27C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6BC35A5D29659C610031F27C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BC35A5F29659C610031F27C /* factorioTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = factorioTool.entitlements; sourceTree = "<group>"; };
 		6BC35A6129659C610031F27C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6BC35A6829659CCA0031F27C /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		6BC35A6A2965A7A70031F27C /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		6BC35A6C2965B9FA0031F27C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		6BC35A6E2965BAE00031F27C /* ListSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +55,89 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B09BA0E29D0841E00DA9E71 /* AlertToast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B09BA0229D031A600DA9E71 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				6B09BA0029D0319900DA9E71 /* JsonCore.swift */,
+				6B802BC929CF2274000AED01 /* materialsAndRecipes.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		6B09BA0529D0797500DA9E71 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				6B09BA0629D0797500DA9E71 /* AlertToast-master */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		6B09BA0B29D0802500DA9E71 /* MainModel */ = {
+			isa = PBXGroup;
+			children = (
+				6BC35A6A2965A7A70031F27C /* ModelData.swift */,
+				6B09BA0729D07A0900DA9E71 /* NotificationData.swift */,
+				6BC35A6829659CCA0031F27C /* Product.swift */,
+			);
+			path = MainModel;
+			sourceTree = "<group>";
+		};
+		6B09BA0C29D0841E00DA9E71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B55D1E629D14346006069A9 /* ProductListView */ = {
+			isa = PBXGroup;
+			children = (
+				6B55D1E229D142C6006069A9 /* ProductListView.swift */,
+				6B802BC229CF1C03000AED01 /* swipeLeftActionView.swift */,
+			);
+			path = ProductListView;
+			sourceTree = "<group>";
+		};
+		6B55D1E729D1434E006069A9 /* ResultView */ = {
+			isa = PBXGroup;
+			children = (
+				6B55D1E429D14318006069A9 /* ResultView.swift */,
+			);
+			path = ResultView;
+			sourceTree = "<group>";
+		};
+		6B55D1E829D14368006069A9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6BC35A6C2965B9FA0031F27C /* Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		6B802BC429CF1FC5000AED01 /* SelectProduct */ = {
+			isa = PBXGroup;
+			children = (
+				6BC35A6E2965BAE00031F27C /* ListSectionView.swift */,
+				6B802BC529CF2044000AED01 /* selectProductPopoverView.swift */,
+				6B09BA0329D03E8700DA9E71 /* ItemsTableView.swift */,
+			);
+			path = SelectProduct;
+			sourceTree = "<group>";
+		};
 		6BC35A4D29659C600031F27C = {
 			isa = PBXGroup;
 			children = (
+				6B09BA0529D0797500DA9E71 /* Packages */,
 				6BC35A5829659C600031F27C /* factorioTool */,
 				6BC35A5729659C600031F27C /* Products */,
+				6B09BA0C29D0841E00DA9E71 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,7 +153,14 @@
 			isa = PBXGroup;
 			children = (
 				6BC35A5929659C600031F27C /* factorioToolApp.swift */,
+				6B09BA0929D07D3300DA9E71 /* NotificationView.swift */,
 				6BC35A5B29659C600031F27C /* ContentView.swift */,
+				6B55D1E629D14346006069A9 /* ProductListView */,
+				6B55D1E729D1434E006069A9 /* ResultView */,
+				6B09BA0B29D0802500DA9E71 /* MainModel */,
+				6B55D1E829D14368006069A9 /* Extension */,
+				6B802BC429CF1FC5000AED01 /* SelectProduct */,
+				6B09BA0229D031A600DA9E71 /* Json */,
 				6BC35A5D29659C610031F27C /* Assets.xcassets */,
 				6BC35A5F29659C610031F27C /* factorioTool.entitlements */,
 				6BC35A6029659C610031F27C /* Preview Content */,
@@ -85,6 +192,9 @@
 			dependencies = (
 			);
 			name = factorioTool;
+			packageProductDependencies = (
+				6B09BA0D29D0841E00DA9E71 /* AlertToast */,
+			);
 			productName = factorioTool;
 			productReference = 6BC35A5629659C600031F27C /* factorioTool.app */;
 			productType = "com.apple.product-type.application";
@@ -97,7 +207,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1410;
-				LastUpgradeCheck = 1410;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					6BC35A5529659C600031F27C = {
 						CreatedOnToolsVersion = 14.1;
@@ -129,6 +239,7 @@
 			files = (
 				6BC35A6229659C610031F27C /* Preview Assets.xcassets in Resources */,
 				6BC35A5E29659C610031F27C /* Assets.xcassets in Resources */,
+				6B802BCA29CF2274000AED01 /* materialsAndRecipes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +250,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B802BC629CF2044000AED01 /* selectProductPopoverView.swift in Sources */,
+				6BC35A6D2965B9FA0031F27C /* Extensions.swift in Sources */,
+				6B09BA0129D0319900DA9E71 /* JsonCore.swift in Sources */,
 				6BC35A5C29659C600031F27C /* ContentView.swift in Sources */,
+				6B802BC329CF1C03000AED01 /* swipeLeftActionView.swift in Sources */,
+				6B55D1E529D14318006069A9 /* ResultView.swift in Sources */,
+				6BC35A6F2965BAE00031F27C /* ListSectionView.swift in Sources */,
+				6B09BA0829D07A0900DA9E71 /* NotificationData.swift in Sources */,
+				6B09BA0429D03E8700DA9E71 /* ItemsTableView.swift in Sources */,
+				6BC35A6B2965A7A70031F27C /* ModelData.swift in Sources */,
+				6B55D1E329D142C6006069A9 /* ProductListView.swift in Sources */,
+				6BC35A6929659CCA0031F27C /* Product.swift in Sources */,
 				6BC35A5A29659C600031F27C /* factorioToolApp.swift in Sources */,
+				6B09BA0A29D07D3300DA9E71 /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +303,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -238,6 +362,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -262,8 +387,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = factorioTool/factorioTool.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"factorioTool/Preview Content\"";
 				DEVELOPMENT_TEAM = 48K3LG232G;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -279,7 +407,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
@@ -287,7 +415,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = YvenChen.factorioTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -300,8 +430,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = factorioTool/factorioTool.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"factorioTool/Preview Content\"";
 				DEVELOPMENT_TEAM = 48K3LG232G;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -317,7 +450,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
@@ -325,7 +458,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = YvenChen.factorioTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -354,6 +489,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6B09BA0D29D0841E00DA9E71 /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AlertToast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6BC35A4E29659C600031F27C /* Project object */;
 }

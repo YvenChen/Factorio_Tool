@@ -1,0 +1,114 @@
+{
+    "id": "AAAAAAAA-1C71-41EF-ADC6-FA7E40BFCF00",
+    "name": "物品与生产配方",
+    "items": [
+        {
+            "id": "1000AAAA-1C71-41EF-ADC6-FA7E40BFCF00",
+            "name": "物流学",
+            "iconName": "Item-group_logistics",
+            "items": [
+                {
+                    "id": "1100AAAA-1C71-41EF-ADC6-FA7E40BFCF00",
+                    "name": "L1",
+                    "items": [
+                        {
+                            "id": "1110AAAA-1C71-41EF-ADC6-FA7E40BFCF00",
+                            "name": "钢制箱",
+                            "iconName": "Steel_chest",
+                            "timeRequired": 0.5,
+                            "recipe": [
+                                {
+                                    "materialName": "钢材",
+                                    "count": 8
+                                }
+                            ],
+                            "output": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "2000AAAA-1C71-41EF-ADC6-FA7E40BFCF00",
+            "name": "生产",
+            "iconName": "Item-group_production",
+            "items": [
+                {
+                    "id": "2100AAAA-1C71-41EF-ADC6-FA7E40BFCF00",
+                    "name": "M1",
+                    "items": [
+                        {
+                            "id": "2110AAAA-1C71-41EF-ADC6-FA7E40BFCF00",
+                            "name": "修理包",
+                            "iconName": "Repair_pack",
+                            "timeRequired": 0.5,
+                            "recipe": [
+                                {
+                                    "materialName": "电路板",
+                                    "count": 2
+                                },
+                                {
+                                    "materialName": "铁齿轮",
+                                    "count": 2
+                                }
+                            ],
+                            "output": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "3000AAAA-1C71-41EF-ADC6-FA7E40BFCF00",
+            "name": "零件",
+            "iconName": "Item-group_intermediate_products",
+            "items": [
+                {
+                    "id": "3100AAAA-1C71-41EF-ADC6-FA7E40BFCF00",
+                    "name": "P1",
+                    "items": [
+                        {
+                            "id": "3110AAAA-1C71-41EF-ADC6-FA7E40BFCF00",
+                            "name": "铁板",
+                            "iconName": "Iron_plate",
+                            "timeRequired": 3.2,
+                            "recipe": [
+                                {
+                                    "materialName": "铁矿",
+                                    "count": 1
+                                }
+                            ],
+                            "output": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "4000AAAA-1C71-41EF-ADC6-FA7E40BFCF00",
+            "name": "武器",
+            "iconName": "Item-group_military",
+            "items": [
+                {
+                    "id": "4100AAAA-1C71-41EF-ADC6-FA7E40BFCF00",
+                    "name": "W1",
+                    "items": [
+                        {
+                            "id": "4110AAAA-1C71-41EF-ADC6-FA7E40BFCF00",
+                            "name": "标准弹匣",
+                            "iconName": "Firearm_magazine",
+                            "timeRequired": 1,
+                            "recipe": [
+                                {
+                                    "materialName": "铁板",
+                                    "count": 4
+                                }
+                            ],
+                            "output": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
