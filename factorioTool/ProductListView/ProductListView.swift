@@ -11,38 +11,37 @@ struct ProductListView: View {
     @EnvironmentObject var modelData: ModelData
     
     var body: some View {
-        ZStack {
-            if let game = modelData.selectedGame {
-                List {
+        if let game = modelData.selectedGame {
+            ScrollView(.vertical) {
+                VStack {
                     ForEach(Array(modelData.selectedProducts.enumerated()), id: \.element) { index, element in
-                        ListSectionView(product: element)
-                            .swipeActions { swipeLeftActionView { modelData.deleteProduct(index) } }
+                        ListSectionView(product: $modelData.selectedProducts[index])
+                            .swipeLeftAction { modelData.deleteProduct(index) }
                     }
-                    .scaleEffect(y: -1)
                 }
                 .scaleEffect(y: -1)
-                .safeAreaInset(edge: .top) {
-                    Color.clear
-                        .ignoresSafeArea()
-                        .frame(height: 0)
-                        .background(.ultraThinMaterial)
-                }
-                .safeAreaInset(edge: .bottom) {
-                    contentBottomView
-                }
-                .navigationTitle(game.localizedName)
-                .navigationBarTitleDisplayMode(.inline)
-            } else {
-                Text("选择一个游戏")
-                    .navigationTitle("")
             }
+            .scaleEffect(y: -1)
+            .safeAreaInset(edge: .top) {
+                Color.clear
+                    .ignoresSafeArea()
+                    .frame(height: 0)
+                    .background(.ultraThinMaterial)
+            }
+            .safeAreaInset(edge: .bottom) {
+                contentBottomView
+            }
+            .navigationTitle(game.localizedName)
+            .navigationBarTitleDisplayMode(.inline)
+        } else {
+            Text("选择一个游戏")
         }
     }
     
     var contentBottomView: some View {
         HStack(spacing: 16) {
             Button {
-                withAnimation(.easeInOut(duration: 5)) {
+                withAnimation(.easeInOut) {
                     modelData.addEmptyProduct()
                 }
             } label: {
@@ -54,7 +53,6 @@ struct ProductListView: View {
                 .padding()
                 .background(.ultraThinMaterial, in: Capsule(style: .continuous))
             }
-            .buttonStyle(.borderless)
             .disabled(modelData.isSelectedProductsContainEmpty)
             
             if UIDevice.current.userInterfaceIdiom == .phone {

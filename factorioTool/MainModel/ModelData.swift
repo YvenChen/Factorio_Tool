@@ -12,7 +12,7 @@ final class ModelData: ObservableObject {
     @Published var selectedProducts: [Product] = [.init(" ")]
     
     var isSelectedProductsContainEmpty: Bool {
-        if let lastSelectedProduct = selectedProducts.first, lastSelectedProduct.name == " " {
+        if let lastSelectedProduct = selectedProducts.last, lastSelectedProduct.name == " " {
             return true
         } else {
             return false
@@ -37,7 +37,7 @@ extension ModelData {
     func addEmptyProduct() {
         if !isSelectedProductsContainEmpty {
             let emptyProduct: Product = .init(" ")
-            selectedProducts.insert(emptyProduct, at: 0)
+            selectedProducts.append(emptyProduct)
         }
     }
     

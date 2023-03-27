@@ -11,21 +11,22 @@ struct ListSectionView: View {
     @EnvironmentObject var modelData: ModelData
     @EnvironmentObject var notificationData: NotificationData
     
-    var product: Product
+    @Binding var product: Product
     
     @State private var isPopoverPresented: Bool = false
-    private var requiredCount: Binding<Int> {
-        Binding {
-            guard let index = modelData.getSelectedProductIndex(of: product) else { return 1 }
-            return modelData.selectedProducts[index].requiredCount ?? 1
-        } set: { updatedValue in
-            guard let index = modelData.getSelectedProductIndex(of: product) else { return }
-            modelData.selectedProducts[index].requiredCount = updatedValue
-        }
-    }
+    @State private var requiredCount: Int = 1
+//    private var requiredCount: Binding<Int> {
+//        Binding {
+//            return product.requiredCount ?? 1
+////            return modelData.selectedProducts[index].requiredCount ?? 1
+//        } set: { updatedValue in
+//            product.requiredCount = updatedValue
+////            modelData.selectedProducts[index].requiredCount = updatedValue
+//        }
+//    }
     
     var body: some View {
-        HStack(spacing: -14) {
+        HStack(spacing: -16) {
             Image(product.iconName ?? "nil")
                 .resizable(resizingMode: .stretch)
                 .aspectRatio(contentMode: .fit)
@@ -62,8 +63,7 @@ struct ListSectionView: View {
                 HStack {
                     HStack(alignment: .bottom, spacing: 2) {
                         Text("需求:")
-                            .font(.system(size: 14))
-                        Text("\(requiredCount.wrappedValue)")
+                        Text("\(requiredCount)")
                             .bold()
                             .padding(.horizontal, 6)
                             .background {
@@ -71,9 +71,8 @@ struct ListSectionView: View {
                                     .foregroundColor(.gray)
                             }
                         Text("个/秒")
-                                .font(.system(size: 9))
+                            .font(.system(size: 9))
                     }
-                    Stepper(value: requiredCount, in: 1...Int.max, step: 1, label: {})
                 }
                 .padding(.horizontal, 16)
             }
@@ -84,17 +83,26 @@ struct ListSectionView: View {
             RoundedRectangle(cornerRadius: 20, style: .continuous)
                 .foregroundColor(Color("listCollectionColor"))
         }
-        .transition(.move(edge: .bottom))
+        .padding(.horizontal)
+        .transition(.move(edge: .leading))
+    }
+    
+    private func stepperIncrement() {
+        print("stepperIncrement")
+    }
+    
+    private func stepperDecrement() {
+        print("stepperDecrement")
     }
 }
 
-struct ListSectionView_Previews: PreviewProvider {
-    static var previews: some View {
-        Group {
-            let emptyProduct: Product = .init(" ")
-            ListSectionView(product: emptyProduct)
-                .environmentObject(ModelData())
-        }
-        .preferredColorScheme(.dark)
-    }
-}
+//struct ListSectionView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        Group {
+//            let emptyProduct: Product = .init(" ")
+//            ListSectionView(index: 0, product: emptyProduct)
+//                .environmentObject(ModelData())
+//        }
+//        .preferredColorScheme(.dark)
+//    }
+//}

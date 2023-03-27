@@ -16,3 +16,9 @@ struct MyDetent: CustomPresentationDetent {
         return context.maxDetentValue * 0.1
     }
 }
+
+extension View {
+    func swipeLeftAction(action: @escaping () -> Void) -> some View {
+        modifier(SwipeLeftAction(action: action))
+    }
+}
